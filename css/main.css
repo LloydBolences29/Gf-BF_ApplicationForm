@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #f1ecc3;
+    
+}
+
+#header-div{
+    margin: 20px;
+    border: 5px solid #515e63;
+    padding: 10px;
+  
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    color: #515e63;
+    font-weight: bold;
+
+}
+p{
+    text-align: center;
+    color: #515e63;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#note-span{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+}
+#hr-heading{
+    border: 5px solid #C9d8b6;
+    margin: 20px 0px;
+}
+
+.first-container{
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    width: 45%;
+}
+h2{
+    color: #515e63;
+    text-decoration: underline;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#form-div input{
+    margin: 10px;
+    border: 10px;
+    padding: 5px
+}
+
+#form-div label{
+
+}
+
+#submit-btn, #reset-btn{
+    background-color: #C9d8b6;
+    color: black;
+    padding: 10px;
+}
+#submit-btn:hover, #reset-btn:hover{
+    color: #57837b;
+    cursor: pointer;
+}
+
+.second-container{
+    float: right;
+    width: 45%;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+

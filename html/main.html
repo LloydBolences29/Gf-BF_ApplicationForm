@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Application Form</title>
+</head>
+<body>
+
+    <div id="header-div">
+        <h1>Application for Girlfriend/BoyFriend</h1>
+        <p> <span id="note-span">NOTE:</span> "The heart is deceitful above all things
+            and beyond cure. Who can understand it?" - Jeremiah 17:9 NIV</p>
+        <p> Please confirm it first before filling up the form. </p>
+    </div>
+
+    <hr id="hr-heading">
+
+    <div class="first-container">
+        <h2>Applicant's Personal Detail</h2>
+
+        <div id="form-div">
+            <form action="form.php" method="POST">
+                <div>
+                    <label for="firstname">Your First Name:</label>
+                    <input type="text" name="firstname" placeholder="Enter your firstname" required/>
+                </div>
+                <br>
+
+                <div>
+                    <label for="lastname">Your Last Name: </label>
+                    <input type="text" name="lastname" placeholder="Enter your lastname" required/>
+                </div>
+                <br>
+
+                <div>
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" placeholder="Enter your Age" required/>
+                </div>
+
+                <div>
+                    <label for="Gender">Gender:</label>
+                    <br>
+                    <input type="radio" name="gender" required/>
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" required/>
+                    <label for="female"> Female</label>
+                    <br>
+                    <input type="radio" name="gender" required/>
+                    <label for="other">Other</label>
+                </div>
+                
+                <div>
+                    <label for="address">Your Address: </label>
+                    <input type="text" name="address" placeholder="Enter your address" required/>
+                </div>
+                <br>    
+                <div>
+                    <label for="phonenumber">Your Phone Number:</label>
+                    <input type="number" name="phonenumber" placeholder="Enter your Phone Number" required/>
+                </div>
+
+                <div>
+                    <label for="email"> Your Email: </label>
+                    <input type="email" name="email" placeholder="Enter your Email" required/>
+                </div>
+                <br>
+
+                <div>
+                    <label for="date">Date filled: </label>
+                    <input type="date" name="date" required/>
+                </div>
+
+                <button type="submit" id="submit-btn">Submit</button>
+                <button type="reset" id="reset-btn">Reset</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="second-container">
+        <h2>Application Essay</h2>
+
+    </div>
+    
+</body>
+</html>
