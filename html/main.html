@@ -23,70 +23,67 @@
         <h2>Applicant's Personal Detail</h2>
 
         <div id="form-div">
-            <form action="form.php" method="POST">
+            <form action="form.html" method="POST" class="myForm">
+                <div class="Msg"></div>
                 <div>
                     <label for="firstname">Your First Name:</label>
-                    <input type="text" name="firstname" placeholder="Enter your firstname" required/>
-                </div>
+                    <input type="text" name="firstname" placeholder="Enter your firstname" id="firstname" required/>
+               </div>
                 <br>
 
                 <div>
                     <label for="lastname">Your Last Name: </label>
-                    <input type="text" name="lastname" placeholder="Enter your lastname" required/>
+                    <input type="text"  name="lastname" placeholder="Enter your lastname" id="lastname" required/>
                 </div>
                 <br>
 
                 <div>
                     <label for="age">Age: </label>
-                    <input type="number" name="age" placeholder="Enter your Age" required/>
+                    <input type="number"  name="age" placeholder="Enter your Age" id="age" required/>
                 </div>
 
                 <div>
-                    <label for="Gender">Gender:</label>
+                    <label for="Gender" >Gender:</label>
                     <br>
-                    <input type="radio" name="gender" required/>
+                    <input type="radio"  name="gender" id="maleGender" required/>
                     <label for="male">Male</label>
                     <br>
-                    <input type="radio" name="gender" required/>
+                    <input type="radio"  name="gender" id="femaleGender" required/>
                     <label for="female"> Female</label>
                     <br>
-                    <input type="radio" name="gender" required/>
+                    <input type="radio"  name="gender" id="otherGender" required/>
                     <label for="other">Other</label>
                 </div>
                 
                 <div>
                     <label for="address">Your Address: </label>
-                    <input type="text" name="address" placeholder="Enter your address" required/>
+                    <input type="text"  name="address" placeholder="Enter your address" id="address" required/>
                 </div>
                 <br>    
                 <div>
                     <label for="phonenumber">Your Phone Number:</label>
-                    <input type="number" name="phonenumber" placeholder="Enter your Phone Number" required/>
+                    <input type="number" id="phoneNumber" name="phonenumber" placeholder="Enter your Phone Number" required/>
                 </div>
 
                 <div>
                     <label for="email"> Your Email: </label>
-                    <input type="email" name="email" placeholder="Enter your Email" required/>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required/>
                 </div>
                 <br>
 
                 <div>
                     <label for="date">Date filled: </label>
-                    <input type="date" name="date" required/>
+                    <input type="date" name="date" id="date" required/>
                 </div>
 
                 <button type="submit" id="submit-btn">Submit</button>
                 <button type="reset" id="reset-btn">Reset</button>
+                <button id="next-btn"><a href="form.html">Next</a></button>
             </form>
 
         </div>
     </div>
 
-
-    <div class="second-container">
-        <h2>Application Essay</h2>
-
-    </div>
-    
+    <script src="../js/main.js"></script>
 </body>
 </html>

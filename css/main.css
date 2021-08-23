@@ -6,6 +6,9 @@
 
 body{
     background-color: #f1ecc3;
+    margin: 1%;
+    border: 3px #515e63 solid;
+    padding: 2%;
     
 }
 
@@ -43,16 +46,22 @@ p{
 }
 
 .first-container{
-    margin: 20px;
-    padding: 10px;
-    float: left;
-    width: 45%;
+    margin: 0% 20%;
+    padding: 20px 30px;
+    border: 3px solid #515e63;
+    display: block;
 }
 h2{
     color: #515e63;
     text-decoration: underline;
     padding: 10px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+#form-div{
+    margin: 0px 15%;
+    padding: 10px;
 }
 
 #form-div input{
@@ -61,26 +70,22 @@ h2{
     padding: 5px
 }
 
-#form-div label{
 
-}
-
-#submit-btn, #reset-btn{
+#submit-btn, #reset-btn, #next-btn{
     background-color: #C9d8b6;
     color: black;
     padding: 10px;
+
 }
-#submit-btn:hover, #reset-btn:hover{
+#submit-btn:hover, #reset-btn:hover, #next-btn:hover{
     color: #57837b;
     cursor: pointer;
 }
 
-.second-container{
-    float: right;
-    width: 45%;
-    margin: 20px;
-    padding: 10px;
-
+#next-btn a{
+    text-decoration: none;
+    color: black;
 }
+
 
 

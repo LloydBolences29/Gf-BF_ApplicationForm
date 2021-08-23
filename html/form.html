@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <!--Creating a section-->
+    <section>
+
+        <!-- A division for header -->
+        <div class="div-header">
+            <h1>Application for Girlfriend/BoyFriend</h1>
+            <br>
+            <p> <span id="note-span">NOTE:</span> "The heart is deceitful above all things
+                and beyond cure. Who can understand it?" - Jeremiah 17:9 NIV</p>
+            <p> Please confirm it first before filling up the form. </p>
+
+            <a href="main.html">> BACK TO MAIN PAGE</a>
+            
+        </div>
+        
+        <hr class="horizontal-line">   
+        
+
+        <div class="container">
+            <h2>Questionaire</h2>
+            <br>
+            <form action="form.php" method="POST" class="questionaire-form">
+                <div class="form-div">
+
+                    <div>
+                        <label for="applyingFor" id="initiation"> Applying for: </label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="applyFor" required/>
+                        <label for="asGirlfriend">As Girlfriend</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="applyFor" required/>
+                        <label for="asBoyfriend">As Boyfriend</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="firstquestion">1. Reason in 50 words. </label>
+                    </div>
+                    
+
+                    <div>    
+                        <textarea name="firstQuestion" cols="30" rows="5" placeholder="Enter your answer here." required></textarea>
+                    </div>
+
+                    <button type="submit" id="submit-btn"> Submit </button>
+                    <button type="reset" id="reset-btn"> Reset </button>
+
+                </div>
+
+            </form>
+
+
+        </div>
+    </section>
+    
+</body>
+</html>
