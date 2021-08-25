@@ -20,6 +20,7 @@ const printPage = document.querySelector("#print");
 submit.addEventListener("click", (e) => {
 
 //normal way of making a function in addeventlistener
+
 //submit.addEventListener("click", function(e){
     e.preventDefault();
 
@@ -48,15 +49,27 @@ submit.addEventListener("click", (e) => {
 });
 
 
+// normal way on how to make a function as a parameter in an addEventListener
+
+//    printPage.addEventListener("click", function(){
+ //       window.print();
+  //  });      
+//};
+
 // normal way on how to make a function
-function onPrint(){
-    printPage.addEventListener("click", function(){
-        window.print();
-    });      
-};
+
+//function onPrint (){
+//    window.print();
+//};
 
 // using arrow function.
+
 //const onPrint = () => {
 //   window.print();
 //};
 
+
+//using arrow function as a paramaeter of an addEventListener
+printPage.addEventListener("click", () => {
+    window.print();
+})
