@@ -12,9 +12,15 @@ const address = document.querySelector("#address");
 const phoneNumber = document.querySelector("#phoneNumber");
 const email = document.querySelector("#email");
 const date = document.querySelector("#date");
+const printPage = document.querySelector("#print");
 
 
-submit.addEventListener("click", function(e) {
+
+//arrow function in an addeventlistener
+submit.addEventListener("click", (e) => {
+
+//normal way of making a function in addeventlistener
+//submit.addEventListener("click", function(e){
     e.preventDefault();
 
     if(firstname.value.length === 0 || 
@@ -40,3 +46,17 @@ submit.addEventListener("click", function(e) {
         console.log("true");
     };
 });
+
+
+// normal way on how to make a function
+function onPrint(){
+    printPage.addEventListener("click", function(){
+        window.print();
+    });      
+};
+
+// using arrow function.
+//const onPrint = () => {
+//   window.print();
+//};
+

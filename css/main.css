@@ -71,13 +71,13 @@ h2{
 }
 
 
-#submit-btn, #reset-btn, #next-btn{
+#submit-btn, #reset-btn, #next-btn, #print{
     background-color: #C9d8b6;
     color: black;
     padding: 10px;
 
 }
-#submit-btn:hover, #reset-btn:hover, #next-btn:hover{
+#submit-btn:hover, #reset-btn:hover, #next-btn:hover, #print:hover{
     color: #57837b;
     cursor: pointer;
 }
